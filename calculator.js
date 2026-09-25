@@ -10,10 +10,10 @@ function storeCalculations(a, b, operation, result){
         "result": result
     };
     history_calculations.push(calculation);
-    
+   
 }
 
-//display the history of calculations
+//So that we can display the history of calculations
 function displayHistory() {
     if (history_calculations.length === 0) {
         console.log("No calculations stored.");
@@ -44,9 +44,9 @@ function calculate(a,b,operation){
     }
 }
  
-console.log(calculate(17,2,"/"));
-console.log(calculate(98,10,"+"));
-console.log(calculate(10,3,"*"));
-console.log(calculate(10,6,"-"));
+console.log(calculate(17,8,"/"));
+console.log(calculate(56,10,"+"));
+console.log(calculate(7,31,"*"));
+console.log(calculate(97,6,"-"));
 
-console.log(history_calculations);
+displayHistory();
